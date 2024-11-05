@@ -6,11 +6,11 @@ const Header = () => {
       <div className="flex justify-end top-4 right-4">
         <Lightswitch />
       </div>
-      <div className="flex justify-between items-center">
-        <div className="ml-4">
-          <button cclassName="menu-icon text-xl">☰</button>
+      <div className="flex justify-between items-center mt-8">
+        <div className="flex items-center justify-center w-10 h-10 bg-[#EEEBFF] text-[#7B61FF] font-bold rounded-full">
+          <span className="transform rotate-12">E</span>
         </div>
-        <div className="flex justify-end space-x-6 mt-6">
+        <div className="flex justify-end space-x-6">
           <a href="#home" className="text-purple-500 dark:text-white">Skills</a>
           <a href="#about" className="text-purple-500 dark:text-white">Projects</a>
           <a href="#contact" className="text-purple-500 dark:text-white">Hire me</a>
