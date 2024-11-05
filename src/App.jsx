@@ -16,7 +16,7 @@ function App() {
       darkMode ? "dark bg-[#252128] text-[#AEBCCF] " : "bg-white text-black"
     }  mx-auto px-32 py-8`}>
       <Header/>
-      <Main/>
+      <Main darkMode={darkMode}/>
       <Skills/>
       <Profile/>
       <Projects/>
