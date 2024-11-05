@@ -9,7 +9,10 @@ const Main = () => {
           <div className="w-20 h-px bg-purple-500"></div>
           <h6 className='text-purple-500'>Ezgi Karaca</h6>
         </div>
-        <h1 className='text-4xl font-semibold'>Creative thinker, Minimalism lover</h1>
+        <h1 className='text-6xl font-semibold flex flex-col space-y-2'>
+          <span>Creative thinker,</span>
+          <span>Minimalism lover</span>
+        </h1>
         <p className='text-lg max-w-lg'>Hi, I’m Ezgi. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.</p>
         <div className='flex space-x-4'>
           <button className='px-6 py-2 bg-white border-2 border-purple-500 text-purple-500 rounded-lg hover:bg-purple-500 hover:text-white transition'>Hire me</button>
