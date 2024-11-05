@@ -1,0 +1,15 @@
+.Mode {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.Mode-dark {
+  background-color: #000;
+}
+
+.Mode-light {
+  background-color: rgb(216, 216, 216);
+}
