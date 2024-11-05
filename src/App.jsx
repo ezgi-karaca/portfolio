@@ -14,7 +14,7 @@ function App() {
   return (
     <div className={`${
       darkMode ? "dark bg-[#252128] text-[#AEBCCF] " : "bg-white text-black"
-    }  mx-auto px-32 py-8`}>
+    }  mx-auto px-32 py-8 transition`}>
       <Header/>
       <Main darkMode={darkMode}/>
       <Skills/>

@@ -18,7 +18,7 @@ const Main = ({ darkMode }) => {
         <p className='text-lg max-w-lg'>Hi, I’m Ezgi. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.</p>
         <div className='flex space-x-4'>
           <button className={`px-6 py-2 ${darkMode ? "bg-[#383838] text-purple-500 border-2 border-purple-500 hover:bg-purple-500 hover:text-white" : "bg-white border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white"} rounded-lg transition`}>Hire me</button>
-          <button className={`px-6 py-2 ${darkMode ? "bg-[#383838] text-purple-500 border-2 border-purple-500 hover:bg-purple-500 hover:text-white" : "bg-white border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white"} rounded-lg transition`}><FontAwesomeIcon icon={faGithub} className="mr-2" />Github</button>
+          <button className={`px-6 py-2 ${darkMode ? "bg-[#383838] text-purple-500 border-2 border-purple-500 hover:bg-purple-500 hover:text-white" : "bg-white border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white"} rounded-lg transition `}><FontAwesomeIcon icon={faGithub} className="mr-2" />Github</button>
           <button className={`px-6 py-2 ${darkMode ? "bg-[#383838] text-purple-500 border-2 border-purple-500 hover:bg-purple-500 hover:text-white" : "bg-white border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white"} rounded-lg transition`}><FontAwesomeIcon icon={faLinkedin} className="mr-2" />LinkedIn</button>
         </div>
       </div>
