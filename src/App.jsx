@@ -24,7 +24,7 @@ function App() {
       <hr className='border-t-[0.5px] w-11/12 mx-auto'/>
       <Profile/>
       <hr className='border-t-[0.5px] w-11/12 mx-auto'/>
-      <Projects/>
+      <Projects darkMode={darkMode}/>
       <Footer/>
     </div>
     </TranslationProvider>
