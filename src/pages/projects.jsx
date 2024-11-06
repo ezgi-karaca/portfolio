@@ -3,13 +3,13 @@ import { useTranslation } from "../contexts/TranslateContext";
 import pizza from '../assets/pizza.jpg'
 import portfolio from '../assets/portfolio.jpg'
 
-// Örnek proje verisi
+
 const projects = [
   {
     id: 1,
     name: 'first_project_name',
     description: "project_description_one",
-    image: `${pizza}`, // Görsel URL'si
+    image: `${pizza}`, 
     technologies: ["React", "Node.js", "CSS", "Figma"],
     github: "https://github.com/ezgi-karaca",
     vercel: "https://ecommerce-app.vercel.app"
@@ -18,7 +18,7 @@ const projects = [
     id: 2,
     name: "second_project_name",
     description: "project_description_two",
-    image: `${portfolio}`, // Görsel URL'si
+    image: `${portfolio}`, 
     technologies: ["React", "Node.js", "Tailwind CSS", "Figma"],
     github: "https://github.com/username/portfolio-website",
     vercel: "https://portfolio-website.vercel.app"

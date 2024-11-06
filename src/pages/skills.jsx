@@ -1,11 +1,11 @@
 import React from 'react';
 import { useTranslation } from '../contexts/TranslateContext';
 
-// skillsData dizisini burada anahtarlar (title, description) ile tanımlıyoruz.
+
 const skillsData = [
   {
-    title: 'Java Script', // 'javascript' key'ini kullanacağız
-    description: 'javascript_description', // 'javascript_description' key'ini kullanacağız
+    title: 'Java Script', 
+    description: 'javascript_description', 
   },
   {
     title: 'React.Js',
