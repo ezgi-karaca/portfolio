@@ -14,8 +14,8 @@ const Main = ({ darkMode }) => {
           <h6 className='text-purple-500'>Ezgi Karaca</h6>
         </div>
         <h1 className='text-6xl font-semibold flex flex-col space-y-2'>
-          <span>Creative thinker,</span>
-          <span>Minimalism lover</span>
+          <span>{translate('headFirst')}</span>
+          <span>{translate('headSecond')}</span>
         </h1>
         <p className='text-lg max-w-lg'>{translate('hero')}</p>
         <div className='flex space-x-4'>
