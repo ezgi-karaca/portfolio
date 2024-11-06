@@ -17,6 +17,7 @@
     "residenceCity": "İkamet Şehri",
     "education": "Eğitim Durumu",
     "preferedRole": "Tercih Ettiği Rol",
+    "school": "Orta Doğu Teknik Üniversitesi, Felsefe, 2023",
     "aboutMe": "Hakkımda",
     "aboutTxt": "Felsefe eğitimi aldım ve düşünme biçimim, analiz yeteneğim ve problem çözme becerim üzerine yoğunlaştım. Şimdi ise yazılım dünyasında yeni bir yolculuğa çıkıyorum. Felsefenin bana kazandırdığı sistematik düşünme becerilerini, yazılım geliştirme sürecine entegre ederek, her projede daha derin ve etkili çözümler üretiyorum. Kendimi sürekli geliştirmek, yenilikçi çözümler üretmek ve teknoloji ile insan hayatını daha verimli hale getirmek için bu alanda ilerliyorum.",
     "projectDescriptionOne": "Filmleri sıralayan ve istenilen filmleri listeye ekleyip orada saklamamızı sağlayan bir web sayfası oluşturuldu. Böylece kullanıcılar, izlemek istedikleri filmleri listelerine ekleyebilecek ve izledikten sonra isterlerse bu filmleri listelerinden çıkarabilecekler.",

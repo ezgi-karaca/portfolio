@@ -21,7 +21,9 @@ function App() {
       <Header/>
       <Main darkMode={darkMode}/>
       <Skills darkMode={darkMode}/>
+      <hr className='border-t-[0.5px] w-11/12 mx-auto'/>
       <Profile/>
+      <hr className='border-t-[0.5px] w-11/12 mx-auto'/>
       <Projects/>
       <Footer/>
     </div>
