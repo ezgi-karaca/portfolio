@@ -7,21 +7,25 @@ import Profile from './pages/Profile';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import { DarkModeContext } from './contexts/DarkModeContext.jsx';
+import { TranslationProvider } from './contexts/TranslateContext.jsx';
+
 
 
 function App() {
   const {darkMode} = useContext(DarkModeContext);
   return (
+    <TranslationProvider>
     <div className={`${
       darkMode ? "dark bg-[#252128] text-[#AEBCCF] " : "bg-white text-black"
     }  mx-auto px-32 py-8 transition`}>
       <Header/>
       <Main darkMode={darkMode}/>
-      <Skills/>
+      <Skills darkMode={darkMode}/>
       <Profile/>
       <Projects/>
       <Footer/>
     </div>
+    </TranslationProvider>
   )
 }
 
