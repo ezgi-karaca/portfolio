@@ -29,9 +29,9 @@ const projects = [
 const ProjectCard = ({ project, darkMode }) => {
   const { translate } = useTranslation();
   return (
-    <div id='projects' className="w-96 flex flex-col">
+    <div id='projects' className="w-full sm:w-80 md:w-96 flex flex-col mx-2">
       <img src={project.image} alt={project.name} className="w-full h-48 object-cover" />
-      <div className="p-6 flex flex-col">
+      <div className="p-6 sm:p-6 flex flex-col">
         <div>
           <h3 className="text-xl font-medium text-purple-500 mb-4">{translate(project.name)}</h3>
           <p className={`text-sm ${darkMode ? 'text-gray-400' : 'text-gray-400'}`}>{translate(project.description)}</p>
@@ -45,7 +45,7 @@ const ProjectCard = ({ project, darkMode }) => {
           </div>
         </div>
         
-        <div className="mt-6 flex justify-between items-center">
+        <div className="mt-6 flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
           <a href={project.github} target="_blank" rel="noopener noreferrer" className={`px-4 py-1 ${darkMode ? "bg-[#383838] text-purple-500 border-2 border-purple-500 hover:bg-purple-500 hover:text-white" : " border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white"} rounded-lg transition`}>
             GitHub
           </a>
@@ -61,9 +61,9 @@ const ProjectCard = ({ project, darkMode }) => {
 const Projects = ({ darkMode }) => {
   const { translate } = useTranslation();
   return (
-    <section id="projects" className="py-16 px-32">
+    <section id="projects" className="py-8 sm:py-16 px-4 sm:px-8 md:px-32">
       <h2 className={`text-4xl font-medium text-center items-start mb-8  ${darkMode ? 'text-purple-500' : 'text-black'}`}>{translate('projects')}</h2>
-      <div className="flex justify-around overflow-x-auto py-4 scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-purple-500">
+      <div className="flex justify-around overflow-x-auto py-4 scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-purple-500 flex-wrap sm:flex-nowrap gap-4 sm:gap-6">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}

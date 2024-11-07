@@ -3,15 +3,15 @@ import { useTranslation } from "../contexts/TranslateContext";
 const Footer = ({darkMode}) => {
   const { translate } = useTranslation();
   return (
-    <footer id='footer' className={`w-full py-24 px-60 mt-auto ${
+    <footer id='footer' className={`w-full py-16 sm:py-24 px-6 sm:px-60 mt-auto ${
       darkMode ? "bg-[#141414]" : "bg-[#F9F9F9]"
     }`}>
       <div className="w-full mx-auto px-6 flex flex-col space-between" >
-        <div className="mb-10">
-          <h2 className={`text-2xl font-semibold mb-4 ${darkMode ? "text-[#AEBCCF]" : "text-gray-800"}`}>{translate("footerTxtOne")}</h2>
-          <h2 className={`text-2xl font-semibold mb-4 ${darkMode ? "text-[#AEBCCF]" : "text-gray-800"}`}>{translate("footerTxtTwo")}</h2>
+        <div className="mb-10 ">
+          <h2 className={`text-xl sm:text-2xl font-semibold mb-4  ${darkMode ? "text-[#AEBCCF]" : "text-gray-800"}`}>{translate("footerTxtOne")}</h2>
+          <h2 className={`text-xl sm:text-2xl font-semibold mb-4 ${darkMode ? "text-[#AEBCCF]" : "text-gray-800"}`}>{translate("footerTxtTwo")}</h2>
         </div>
-        <div className="flex justify-between items-center mt-6">
+        <div className="flex flex-col sm:flex-row justify-between items-center mt-6 space-y-4 sm:space-y-0">
           <div className="flex items-center">
             <span
               role="img"

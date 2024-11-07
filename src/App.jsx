@@ -21,7 +21,9 @@ function App() {
       darkMode ? "dark bg-[#252128] text-[#AEBCCF] " : "bg-white text-black"
     }  mx-auto min-h-screen`}>
       <Header/>
+      <div className="mt-32 lg:mt-0">
       <Main darkMode={darkMode}/>
+      </div>
       <Skills darkMode={darkMode}/>
       <hr className='border-t-[0.5px] w-9/12 mx-auto mb-2'/>
       <Profile/>

@@ -38,7 +38,7 @@ const Skills = ({ darkMode }) => {
   const { translate } = useTranslation();
 
   return (
-    <section id='skills' className="px-44 flex flex-col w-full p-10">
+    <section id='skills' className="px-6 sm:px-10 lg:px-44 flex flex-col w-full p-10 mt-8 sm:mt-12 lg:mt-16">
         <h2 className={`text-3xl font-medium text-left items-start px-6 mb-2 ${darkMode ? 'text-gray-400' : 'text-black'}`}>{translate('skills')}</h2>
       <div className="flex overflow-x-auto py-4 gap-10 scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-purple-500">
         {skillsData.map((skill, index) => (
