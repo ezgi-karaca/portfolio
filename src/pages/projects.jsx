@@ -61,8 +61,8 @@ const ProjectCard = ({ project, darkMode }) => {
 const Projects = ({ darkMode }) => {
   const { translate } = useTranslation();
   return (
-    <section id="projects" className="py-16 px-6">
-      <h2 className={`text-4xl font-medium text-center items-start px-6 mb-8  ${darkMode ? 'text-purple-500' : 'text-black'}`}>{translate('projects')}</h2>
+    <section id="projects" className="py-16 px-32">
+      <h2 className={`text-4xl font-medium text-center items-start mb-8  ${darkMode ? 'text-purple-500' : 'text-black'}`}>{translate('projects')}</h2>
       <div className="flex justify-around overflow-x-auto py-4 scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-purple-500">
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project} />

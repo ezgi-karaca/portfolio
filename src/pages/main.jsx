@@ -7,7 +7,7 @@ import { useTranslation } from '../contexts/TranslateContext';
 const Main = ({ darkMode }) => {
   const{translate} = useTranslation();
   return (
-    <div className='flex items-center justify-around h-[80vh] space-x-8'> 
+    <div className='px-32 flex items-center justify-around h-[80vh] space-x-8'> 
       <div className='flex flex-col space-y-6'>
         <div className='flex items-center space-x-2'>
           <div className="w-20 h-px bg-purple-500"></div>

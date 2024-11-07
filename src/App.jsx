@@ -17,15 +17,15 @@ function App() {
     <TranslationProvider>
     <div className={`${
       darkMode ? "dark bg-[#252128] text-[#AEBCCF] " : "bg-white text-black"
-    }  mx-auto px-32 py-8 transition`}>
+    }  mx-auto min-h-screen`}>
       <Header/>
       <Main darkMode={darkMode}/>
       <Skills darkMode={darkMode}/>
-      <hr className='border-t-[0.5px] w-11/12 mx-auto'/>
+      <hr className='border-t-[0.5px] w-9/12 mx-auto mb-2'/>
       <Profile/>
-      <hr className='border-t-[0.5px] w-11/12 mx-auto'/>
+      <hr className='border-t-[0.5px] w-9/12 mx-auto mb-2 mt-4'/>
       <Projects darkMode={darkMode}/>
-      <Footer/>
+      <Footer darkMode={darkMode}/>
     </div>
     </TranslationProvider>
   )

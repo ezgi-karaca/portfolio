@@ -11,7 +11,7 @@ const Header = () => {
     setLanguage(language);
   }
   return (
-    <header className="w-full h-[12vh] p-4 dark:bg-gray-900">
+    <header className="px-44 h-[12vh] p-4 dark:bg-gray-900">
       <div className="flex justify-end space-around">
           <div className="flex top-4 right-4">
               <Lightswitch />

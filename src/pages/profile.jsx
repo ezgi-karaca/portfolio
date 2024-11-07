@@ -4,10 +4,10 @@ const Profile = () => {
   const { translate } = useTranslation();
 
   return (
-    <div className="flex flex-col w-full p-10">
-      <h2 className="px-8 text-3xl font-normal">{translate("profile")}</h2>
+    <div className="px-44 flex flex-col w-full p-10">
+      <h2 className="px-6 text-3xl font-normal">{translate("profile")}</h2>
       <div className="flex mt-4 gap-4">
-        <div className="flex flex-col w-1/2 px-8 gap-6">
+        <div className="flex flex-col w-1/2 px-6 gap-6">
           <h3 className="text-2xl font-normal text-purple-500">{translate("profile")}</h3>
           <div className="flex text-sm gap-12">
             <div className="flex flex-col gap-3">
