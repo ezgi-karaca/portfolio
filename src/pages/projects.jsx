@@ -12,7 +12,7 @@ const projects = [
     image: `${pizza}`, 
     technologies: ["React", "Node.js", "CSS", "Figma"],
     github: "https://github.com/ezgi-karaca/pizza-react",
-    vercel: "https://ecommerce-app.vercel.app"
+    vercel: "https://pizza-react-mu.vercel.app/p"
   },
   {
     id: 2,
