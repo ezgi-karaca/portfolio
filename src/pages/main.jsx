@@ -19,9 +19,11 @@ const Main = ({ darkMode }) => {
         </h1>
         <p className='text-lg max-w-lg'>{translate('hero')}</p>
         <div className='flex space-x-4'>
-          <button className={`px-6 py-2 ${darkMode ? "bg-[#383838] text-purple-500 border-2 border-purple-500 hover:bg-purple-500 hover:text-white" : "bg-white border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white"} rounded-lg transition`}>{translate('hireMe')}</button>
-          <button className={`px-6 py-2 ${darkMode ? "bg-[#383838] text-purple-500 border-2 border-purple-500 hover:bg-purple-500 hover:text-white" : "bg-white border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white"} rounded-lg transition `}><FontAwesomeIcon icon={faGithub} className="mr-2" />Github</button>
-          <button className={`px-6 py-2 ${darkMode ? "bg-[#383838] text-purple-500 border-2 border-purple-500 hover:bg-purple-500 hover:text-white" : "bg-white border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white"} rounded-lg transition`}><FontAwesomeIcon icon={faLinkedin} className="mr-2" />LinkedIn</button>
+          <a href="mailto:w.ezgikaraca@gmail.com" className={`px-6 py-2 ${darkMode ? "bg-[#383838] text-purple-500 border-2 border-purple-500 hover:bg-purple-500 hover:text-white" : "bg-white border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white"} rounded-lg transition`}>{translate('hireMe')}</a>
+          <a href="https://github.com/ezgi-karaca"
+              target="_blank" className={`px-6 py-2 ${darkMode ? "bg-[#383838] text-purple-500 border-2 border-purple-500 hover:bg-purple-500 hover:text-white" : "bg-white border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white"} rounded-lg transition `}><FontAwesomeIcon icon={faGithub} className="mr-2" />Github</a>
+          <a href="https://www.linkedin.com/in/ezgi-karaca"
+              target="_blank" className={`px-6 py-2 ${darkMode ? "bg-[#383838] text-purple-500 border-2 border-purple-500 hover:bg-purple-500 hover:text-white" : "bg-white border-2 border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white"} rounded-lg transition`}><FontAwesomeIcon icon={faLinkedin} className="mr-2" />LinkedIn</a>
         </div>
       </div>
       <img className="w-1/3 rounded-lg mt-10" src={ezgi}/>

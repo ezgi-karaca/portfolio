@@ -11,7 +11,7 @@ const projects = [
     description: "project_description_one",
     image: `${pizza}`, 
     technologies: ["React", "Node.js", "CSS", "Figma"],
-    github: "https://github.com/ezgi-karaca",
+    github: "https://github.com/ezgi-karaca/pizza-react",
     vercel: "https://ecommerce-app.vercel.app"
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     description: "project_description_two",
     image: `${portfolio}`, 
     technologies: ["React", "Node.js", "Tailwind CSS", "Figma"],
-    github: "https://github.com/username/portfolio-website",
+    github: "https://github.com/ezgi-karaca/portfolio",
     vercel: "https://portfolio-website.vercel.app"
   }
 ];
@@ -29,7 +29,7 @@ const projects = [
 const ProjectCard = ({ project, darkMode }) => {
   const { translate } = useTranslation();
   return (
-    <div className="w-96 flex flex-col">
+    <div id='projects' className="w-96 flex flex-col">
       <img src={project.image} alt={project.name} className="w-full h-48 object-cover" />
       <div className="p-6 flex flex-col">
         <div>

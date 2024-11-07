@@ -3,7 +3,7 @@ import { useTranslation } from "../contexts/TranslateContext";
 const Footer = ({darkMode}) => {
   const { translate } = useTranslation();
   return (
-    <footer className={`w-full py-24 px-60 mt-auto ${
+    <footer id='footer' className={`w-full py-24 px-60 mt-auto ${
       darkMode ? "bg-[#141414]" : "bg-[#F9F9F9]"
     }`}>
       <div className="w-full mx-auto px-6 flex flex-col space-between" >
@@ -28,8 +28,10 @@ const Footer = ({darkMode}) => {
             </a>
           </div>
           <div className="flex space-x-6">
-            <a className="text-[#00AB6B] hover:text-[#008C4A]">Github</a>
-            <a className="text-[#0077B5] hover:text-[#005F8D]">LinkedIn</a>
+            <a href="https://github.com/ezgi-karaca"
+              target="_blank" className="text-[#00AB6B] hover:text-[#008C4A]">Github</a>
+            <a href="https://www.linkedin.com/in/ezgi-karaca"
+              target="_blank" className="text-[#0077B5] hover:text-[#005F8D]">LinkedIn</a>
           </div>
         </div>
       </div>

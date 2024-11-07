@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Lightswitch from "../components/Lightswitch"
 import { useTranslation } from "../contexts/TranslateContext";
+import { Link } from "react-scroll";
 
 
 const Header = () => {
@@ -28,15 +29,28 @@ const Header = () => {
           <span className="transform rotate-12">E</span>
         </div>
         <div className="flex justify-end space-x-6">
-          <a href="#home" className="text-purple-500 dark:text-white">
-            {translate('skills')}
-          </a>
-          <a href="#about" className="text-purple-500 dark:text-white">
-          {translate('projects')}
-          </a>
-          <a href="#contact" className="text-purple-500 dark:text-white">
-          {translate('hireMe')}
-          </a>
+          
+          <Link
+            to="skills" // Burada hedef olarak "skills" id'sini kullanıyoruz
+            smooth={true} // Kaydırma animasyonunu etkinleştiriyoruz
+            duration={500} // Kaydırma süresi (milisaniye)
+            className="text-purple-500 dark:text-white cursor-pointer"
+          >{translate('skills')}
+          </Link>
+          <Link
+            to="projects" // Burada hedef olarak "skills" id'sini kullanıyoruz
+            smooth={true} // Kaydırma animasyonunu etkinleştiriyoruz
+            duration={500} // Kaydırma süresi (milisaniye)
+            className="text-purple-500 dark:text-white cursor-pointer"
+          >{translate('projects')}
+          </Link>
+          <Link
+            to="footer" // Burada hedef olarak "skills" id'sini kullanıyoruz
+            smooth={true} // Kaydırma animasyonunu etkinleştiriyoruz
+            duration={500} // Kaydırma süresi (milisaniye)
+            className="text-purple-500 dark:text-white cursor-pointer"
+          >{translate('hireMe')}
+          </Link>
         </div>
       </div>
     </header>
