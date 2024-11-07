@@ -13,6 +13,8 @@ import { TranslationProvider } from './contexts/TranslateContext.jsx';
 
 function App() {
   const {darkMode} = useContext(DarkModeContext);
+
+  
   return (
     <TranslationProvider>
     <div className={`${

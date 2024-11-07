@@ -27,9 +27,9 @@ function Lightswitch() {
             />
           </div>
         </label>
-        <span className="ml-3 text-[#777777]">
+        <span className="ml-3 text-xs text-[#777777]">
           {" "}
-          {darkMode ? "Dark Mode" : "Light Mode"}{" "}
+          {darkMode ? "DARK MODE" : "LIGHT MODE"}{" "}
         </span>
       </div>
     </>
