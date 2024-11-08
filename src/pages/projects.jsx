@@ -15,7 +15,7 @@ const ProjectCard = ({ project, darkMode }) => {
 
           <div className="flex flex-wrap mt-2 mb-4">
             {project.technologies.map((tech, index) => (
-              <span key={index} className={`text-xs rounded-full px-3 py-1 mr-2 mt-2 ${darkMode ? "bg-gray-200 text-gray-200" : "bg-gray-400 text-black"}`}>
+              <span key={index} className={`text-xs rounded-full px-3 py-1 mr-2 mt-2 ${darkMode ? "bg-gray-200 text-gray-500" : "bg-gray-400 text-gray-700"}`}>
                 {tech}
               </span>
             ))}
