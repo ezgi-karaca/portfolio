@@ -1,10 +1,10 @@
 import { useContext } from 'react';
 import './index.css';
-import Header from './pages/Header';
-import Main from './pages/Main';
-import Profile from './pages/Profile';
-import Projects from './pages/Projects';
-import Skills from './pages/Skills';
+import Header from './pages/Header.jsx';
+import Main from './pages/Main.jsx';
+import Profile from './pages/Profile.jsx';
+import Projects from './pages/Projects.jsx';
+import Skills from './pages/Skills.jsx';
 import { DarkModeContext } from './contexts/DarkModeContext.jsx';
 import Footer from './pages/Footer.jsx';
 
