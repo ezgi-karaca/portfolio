@@ -18,14 +18,14 @@ function App() {
     }  mx-auto min-h-screen`}>
       <Header/>
       <div className="mt-32 lg:mt-0">
-      <Intro darkMode={darkMode}/>
+      <Intro/>
       </div>
-      <Skills darkMode={darkMode}/>
+      <Skills />
       <hr className='border-t-[0.5px] w-9/12 mx-auto mb-2'/>
       <Profile />
       <hr className='border-t-[0.5px] w-9/12 mx-auto mb-2 mt-4'/>
-      <Projects darkMode={darkMode}/>
-      <Footer darkMode={darkMode}/>
+      <Projects />
+      <Footer />
     </div>
   )
 }

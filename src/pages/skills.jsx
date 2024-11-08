@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useTranslation } from '../contexts/TranslateContext';
 import skillsData from '../data/skills';
+import { DarkModeContext } from '../contexts/DarkModeContext';
 
-const Skills = ({ darkMode }) => {
-  
+const Skills = () => {
+  const {darkMode} = useContext(DarkModeContext);
   const { translate } = useTranslation();
 
   return (

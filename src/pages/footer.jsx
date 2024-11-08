@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import { useTranslation } from "../contexts/TranslateContext";
+import { DarkModeContext } from "../contexts/DarkModeContext";
 
-const Footer = ({darkMode}) => {
+const Footer = () => {
+  const {darkMode} = useContext(DarkModeContext);
   const { translate } = useTranslation();
   return (
     <footer id='footer' className={`w-full py-16 sm:py-24 px-6 sm:px-60 mt-auto ${

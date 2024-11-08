@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import ezgi from '../assets/ezgi.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { useTranslation } from '../contexts/TranslateContext';
 import { ToastContainer, toast } from 'react-toastify'; // react-toastify import'ları
 import 'react-toastify/dist/ReactToastify.css';
+import { DarkModeContext, useDarkMode } from '../contexts/DarkModeContext';
 
-const Main = ({ darkMode }) => {
+const Main = () => {
+  const {darkMode} = useContext(DarkModeContext);
   const{translate} = useTranslation();
 
   const handleGithubClick = () => {

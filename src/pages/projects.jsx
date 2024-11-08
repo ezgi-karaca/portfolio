@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useTranslation } from "../contexts/TranslateContext";
 import projects from "../data/projects"; 
+import { DarkModeContext } from "../contexts/DarkModeContext";
 
 
-const ProjectCard = ({ project, darkMode }) => {
+const ProjectCard = ({ project}) => {
+  const {darkMode} = useContext(DarkModeContext);
   const { translate } = useTranslation();
   return (
     <div id="projects" className="w-full sm:w-80 md:w-96 flex flex-col mx-2 bg-opacity-100 shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300">
@@ -35,7 +37,8 @@ const ProjectCard = ({ project, darkMode }) => {
   );
 };
 
-const Projects = ({ darkMode }) => {
+const Projects = () => {
+  const {darkMode} = useContext(DarkModeContext);
   const { translate } = useTranslation();
 
   return (
