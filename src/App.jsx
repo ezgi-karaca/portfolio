@@ -8,9 +8,6 @@ import Skills from './pages/Skills.jsx';
 import Profile from './pages/Profile.jsx';
 import Projects from './pages/Projects.jsx';
 
-
-
-
 function App() {
   const {darkMode} = useContext(DarkModeContext);
 
