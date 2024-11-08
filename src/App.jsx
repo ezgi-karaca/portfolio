@@ -1,12 +1,12 @@
 import { useContext } from 'react';
 import './index.css';
 import { DarkModeContext } from './contexts/DarkModeContext.jsx';
-import Footer from './pages/Footer.jsx';
 import Header from './pages/Header.jsx';
 import Intro from './pages/Intro.jsx'
 import Skills from './pages/Skills.jsx';
 import Profile from './pages/Profile.jsx';
 import Projects from './pages/Projects.jsx';
+import Footer from './pages/Footer.jsx';
 
 function App() {
   const {darkMode} = useContext(DarkModeContext);
