@@ -7,7 +7,6 @@ import Profile from './pages/Profile';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import { DarkModeContext } from './contexts/DarkModeContext.jsx';
-import { TranslationProvider } from './contexts/TranslateContext.jsx';
 
 
 
@@ -16,7 +15,6 @@ function App() {
 
   
   return (
-    <TranslationProvider>
     <div className={`${
       darkMode ? "dark bg-[#252128] text-[#AEBCCF] " : "bg-white text-black"
     }  mx-auto min-h-screen`}>
@@ -31,7 +29,6 @@ function App() {
       <Projects darkMode={darkMode}/>
       <Footer darkMode={darkMode}/>
     </div>
-    </TranslationProvider>
   )
 }
 
